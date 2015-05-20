@@ -1,3 +1,4 @@
+// ================= SEARCH CUES
 var cues = [
 'creativity',
 'fear',
@@ -21,11 +22,6 @@ var cues = [
 'psychology'
 ]
 
-// for (var i = 0; i < 4; i++) {
-// 	var num = Math.floor(Math.random() * 19);
-// 	$('.searchCues').append(cues[num]);
-// };
-
 var num1 = Math.floor(Math.random() * 19);
 var num2 = Math.floor(Math.random() * 19);
 var num3 = Math.floor(Math.random() * 19);
@@ -40,17 +36,13 @@ if ((num1 !== num2 && num1 !== num3 && num1 !== num4) &&
 	+cues[num3]+', '
 	+cues[num4]);
 } else {
-	console.log('Repeated number!');
+	console.log('Default search cues.');
 };
-// console.log(array);
 
 // ============== TED TALKS ================
 
 var tedTalkApp = {
 };
-
-// pg2tsch8neenradcej2eyua7
-// cd4xktdmjzbgzj6dbguramyh
 
 tedTalkApp.getInfo = function(query) {
 	$.ajax({
@@ -62,6 +54,8 @@ tedTalkApp.getInfo = function(query) {
 			categories : 'talks',
 			limit : 20,
 			'api-key' : 'cd4xktdmjzbgzj6dbguramyh'
+			//This is my personal key
+			//PLEASE OBTAIN AND USE YOUR OWN KEYS <3
 		},
 		success: function(res) {
 			console.log(res);
@@ -135,7 +129,7 @@ gBookApp.getInfo = function(query) {
 			key : 'AIzaSyAceH9P3iLh5CdQezbeFelD2O-GnWj-47Y'
 		},
 		success: function(res) {
-			console.log(res);
+			// console.log(res);
 			gBookApp.displayInfo(res.items[0]);
 			gBookApp.displayInfo(res.items[1]);
 			gBookApp.displayInfo(res.items[Math.floor(Math.random() * (res.items.length - 2) + 2)]);
@@ -157,7 +151,7 @@ gBookApp.getMoreBooks = function(query) {
 			key : 'AIzaSyAceH9P3iLh5CdQezbeFelD2O-GnWj-47Y'
 		},
 		success: function(res) {
-			console.log(res);
+			// console.log(res);
 			gBookApp.displayInfo(res.items[Math.floor(Math.random() * res.items.length)]);
 			gBookApp.displayInfo(res.items[Math.floor(Math.random() * res.items.length)]);
 			gBookApp.displayInfo(res.items[Math.floor(Math.random() * res.items.length)]);
@@ -173,7 +167,7 @@ gBookApp.events = function() {
 		e.preventDefault();
 		// Get the entered user input
 		var searchQuery = $(this).find('input[type=search]').val();
-		console.log(searchQuery);
+		// console.log(searchQuery);
 		// Pass that value to the app.getInfo method
 		gBookApp.getInfo(searchQuery);
 		// Clear search value
@@ -217,7 +211,7 @@ gBookApp.displayInfo = function(apiData) {
 
 		$('#bookContainer').append($book);
 	};
-	console.log(apiData);
+	// console.log(apiData);
 }; 
 
 gBookApp.init = function() {
@@ -227,7 +221,7 @@ gBookApp.init = function() {
 
 // ================ INTIALIZE ================
 
-$(document).ready(function(){
+$(document).ready(function() {
   tedTalkApp.init();
   gBookApp.init();
   $('#upTop').on('click', function(){
