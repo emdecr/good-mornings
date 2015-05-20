@@ -282,7 +282,7 @@ h2.talkTitleTed {
 	}  
 }
 
-@media #{$mobile} {
+@media #{$mobile}, #{$mobile-landscape} {
 	.talkVideo {
 		display: none;
 	}
