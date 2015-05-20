@@ -3,7 +3,7 @@
 
 ###Live at [www.emilydelacruz.com/goodmornings](http://emilydelacruz.com/goodmornings)
 
-This is the app I created for Week 5 of HackerYou's Full-time Front-End Bootcamp <3 #the6six
+This is the app I created for Week 5 of [HackerYou](http://hackeryou.com/)'s Full-time Front-End Bootcamp <3 #the6ix
 
 **Good Mornings** is all about starting off your day feeling inspired. I love TED Talks and books, so I decided to combine the two. Type a topic into the search field, press enter, and a few TED Talks will appear, as well as some books that relate (in varying degrees) to them.
 
