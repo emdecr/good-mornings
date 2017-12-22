@@ -1,7 +1,5 @@
-#Good Mornings
-##API App – HackerYou Week 5 Project
-
-###Live at [www.emilydelacruz.com/goodmornings](http://emilydelacruz.com/goodmornings)
+# Good Mornings
+## API App – HackerYou Week 5 Project
 
 This is the app I created for Week 5 of [HackerYou](http://hackeryou.com/)'s Full-time Front-End Bootcamp <3 #the6ix
 
